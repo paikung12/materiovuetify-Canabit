@@ -138,6 +138,16 @@
         :to="{ name: 'form-layouts' }"
         :icon="icons.mdiFormSelect"
       ></nav-menu-link>
+      <nav-menu-link
+        title="pages login"
+        :to="{ name: 'pages-login' }"
+        :icon="icons.mdiFormSelect"
+      ></nav-menu-link>
+      <nav-menu-link
+        title="pages-register"
+        :to="{ name: 'pages-register' }"
+        :icon="icons.mdiFormSelect"
+      ></nav-menu-link>
     </v-list>
     <a
       href="https://themeselection.com/products/materio-vuetify-vuejs-admin-template"

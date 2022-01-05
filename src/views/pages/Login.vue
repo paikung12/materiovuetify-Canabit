@@ -18,15 +18,15 @@
             ></v-img>
 
             <h2 class="text-2xl font-weight-semibold">
-              Materio
+              CANABIT
             </h2>
           </router-link>
         </v-card-title>
 
         <!-- title -->
-        <v-card-text>
-          <p class="text-2xl font-weight-semibold text--primary mb-2">
-            Welcome to Materio! 👋🏻
+        <v-card-text >
+          <p class="text-2xl font-weight-semibold text--primary mb-2 text-center ">
+            Welcome to Cannabit! 👋🏻
           </p>
           <p class="mb-2">
             Please sign-in to your account and start the adventure
@@ -57,17 +57,11 @@
             ></v-text-field>
 
             <div class="d-flex align-center justify-space-between flex-wrap">
-              <v-checkbox
-                label="Remember Me"
-                hide-details
-                class="me-3 mt-1"
-              >
-              </v-checkbox>
 
               <!-- forgot link -->
               <a
                 href="javascript:void(0)"
-                class="mt-1"
+                class="mt-5"
               >
                 Forgot Password?
               </a>
@@ -143,7 +137,7 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiFacebook, mdiTwitter, mdiGithub, mdiGoogle, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js'
+import { mdiFacebook, mdiAlphaLCircleOutline, mdiGoogle, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js'
 import { ref } from '@vue/composition-api'
 
 export default {
@@ -158,14 +152,9 @@ export default {
         colorInDark: '#4267b2',
       },
       {
-        icon: mdiTwitter,
-        color: '#1da1f2',
-        colorInDark: '#1da1f2',
-      },
-      {
-        icon: mdiGithub,
-        color: '#272727',
-        colorInDark: '#fff',
+        icon: mdiAlphaLCircleOutline,
+        color: '#66CB9F',
+        colorInDark: '#66CB9F',
       },
       {
         icon: mdiGoogle,
