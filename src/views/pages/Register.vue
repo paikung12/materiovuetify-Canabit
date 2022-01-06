@@ -33,11 +33,19 @@
                     <v-text-field v-model="password" outlined :type="isPasswordVisible ? 'text' : 'password'" label="Password" placeholder="············" :append-icon="isPasswordVisible ? icons.mdiEyeOffOutline : icons.mdiEyeOutline" hide-details @click:append="isPasswordVisible = !isPasswordVisible"></v-text-field> -->
                     <v-row>
                         <v-col cols="12" md="3">
-                            <label for="firstnameHorizontalIcons">First Name</label>
+                            <label for="firstnameHorizontalIcons">Frist Name</label>
                         </v-col>
 
                         <v-col cols="12" md="9">
-                            <v-text-field id="firstnameHorizontalIcons" v-model="firstname" :prepend-inner-icon="icons.mdiAccountOutline" outlined dense placeholder="First Name" hide-details></v-text-field>
+                            <v-text-field id="firstnameHorizontalIcons" v-model="firstname" :prepend-inner-icon="icons.mdiAccountOutline" outlined dense placeholder=" Frist Name" hide-details></v-text-field>
+                        </v-col>
+
+                         <v-col cols="12" md="3">
+                            <label for="firstnameHorizontalIcons">Last Name</label>
+                        </v-col>
+
+                        <v-col cols="12" md="9">
+                            <v-text-field id="firstnameHorizontalIcons" v-model="firstname" :prepend-inner-icon="icons.mdiAccountOutline" outlined dense placeholder=" Last Name" hide-details></v-text-field>
                         </v-col>
 
                         <v-col cols="12" md="3">
@@ -52,17 +60,31 @@
                             <label for="mobileHorizontalIcons">Mobile</label>
                         </v-col>
 
-                        <v-col cols="12" md="9">
-                            <v-text-field id="mobileHorizontalIcons" v-model="mobile" type="number" outlined :prepend-inner-icon="icons.mdiCellphone" dense placeholder="Number" hide-details></v-text-field>
-                        </v-col>
+                            <v-col cols="12" md="9">
+                                <v-text-field id="mobileHorizontalIcons" v-model="mobile" type="number" outlined :prepend-inner-icon="icons.mdiCellphone" dense placeholder="Number" hide-details></v-text-field>
+                            </v-col>
 
-                        <v-col cols="12" md="3">
-                            <label for="passwordHorizontalIcons">Password</label>
-                        </v-col>
+                            <v-col cols="12" md="3">
+                                <label for="passwordHorizontalIcons">Password</label>
+                            </v-col>
 
                         <v-col cols="12" md="9">
                             <v-text-field id="passwordHorizontalIcons" v-model="password" :prepend-inner-icon="icons.mdiLockOutline" type="password" outlined dense placeholder="Password" hide-details></v-text-field>
-                        </v-col>             
+                        </v-col>      
+                        <v-col cols="12" md="3">
+                            <label for="passwordHorizontalIcons">Confirm Password</label>
+                        </v-col>
+
+                        <v-col cols="12" md="9">
+                            <v-text-field id="passwordHorizontalIcons" v-model="password" :prepend-inner-icon="icons.mdiLockOutline" type="password" outlined dense placeholder="Confirm Password" hide-details></v-text-field>
+                        </v-col> 
+                        <v-col cols="12" md="3">
+                            <label for="passwordHorizontalIcons">Refferal Code</label>
+                        </v-col>
+
+                        <v-col cols="12" md="9">
+                            <v-text-field id="passwordHorizontalIcons" v-model="password" :prepend-inner-icon="icons.mdiLockOutline"  outlined dense placeholder="RefferalCode" hide-details></v-text-field>
+                        </v-col>           
                     </v-row>
 
                     <v-btn block color="primary" class="mt-6">
