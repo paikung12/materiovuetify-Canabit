@@ -16,11 +16,10 @@
               contain
               class="me-3 "
             ></v-img>
-
+            
             <h2 class="text-2xl font-weight-semibold">
               CANABIT
             </h2>
-          </router-link>
         </v-card-title>
 
         <!-- title -->
