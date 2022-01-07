@@ -1,54 +1,62 @@
 <template>
 <v-card flat class="mt-5">
     <v-form>
-        <div class="px-3">
+        <div class="px-3 mt-15 mb-5">
             <v-card-text class="pt-5">
                 <v-row>
                     <v-col cols="12" sm="8" md="6">
-                        <!-- KYC -->
+                        <!-- current password -->
                         <v-expansion-panels inset>
                             <v-expansion-panel>
-                                <v-expansion-panel-header>1. Verification of identity by uploading a picture of an ID card</v-expansion-panel-header>
+                                <v-expansion-panel-header>1. Verification of identity by uploading a picture of an ID card </v-expansion-panel-header>
                                 <v-expansion-panel-content>
-                                    Chocolate bar sweet roll chocolate cake pastry I love gummi bears pudding chocolate cake. I love brownie powder apple pie sugar plum I love cake candy canes wafer. Tiramisu I love oat cake oat cake danish icing. Dessert sugar plum sugar plum cookie donut chocolate cake oat cake I love gummi bears.
+                                    Cupcake ipsum dolor sit amet. Candy canes cheesecake chocolate bar I love I love jujubes gummi bears ice cream.
+                                    Cheesecake tiramisu toffee cheesecake sugar plum candy canes bonbon candy.
+                                    <v-card-actions class="primary pa-0 mt-10">
+                                        <v-btn color="primary" block dark large @click="$refs.refInputEl.click()">
+                                            upload picture
+                                        </v-btn>
+                                        <input ref="refInputEl" type="file" accept=".jpeg,.png,.jpg,GIF" :hidden="true" />
+                                    </v-card-actions>
                                 </v-expansion-panel-content>
                             </v-expansion-panel>
                             <v-expansion-panel>
-                                <v-expansion-panel-header>2. Verify your identity by uploading a picture of your account number</v-expansion-panel-header>
+                                <v-expansion-panel-header>2. Verify your identity by uploading a picture of your account number </v-expansion-panel-header>
                                 <v-expansion-panel-content>
-                                    Chocolate bar sweet roll chocolate cake pastry I love gummi bears pudding chocolate cake. I love brownie powder apple pie sugar plum I love cake candy canes wafer. Tiramisu I love oat cake oat cake danish icing. Dessert sugar plum sugar plum cookie donut chocolate cake oat cake I love gummi bears.
+                                    Cupcake ipsum dolor sit amet. Candy canes cheesecake chocolate bar I love I love jujubes gummi bears ice cream.
+                                    Cheesecake tiramisu toffee cheesecake sugar plum candy canes bonbon candy.
+                                    <v-card-actions class="primary pa-0 mt-10">
+                                        <v-btn color="primary" block dark large @click="$refs.refInputEl.click()">
+                                            upload picture
+                                        </v-btn>
+                                        <input ref="refInputEl" type="file" accept=".jpeg,.png,.jpg,GIF" :hidden="true" />
+                                    </v-card-actions>
                                 </v-expansion-panel-content>
                             </v-expansion-panel>
                             <v-expansion-panel>
-                                <v-expansion-panel-header>3. Verify your identity by uploading a picture of yourself taken with your ID.</v-expansion-panel-header>
+                                <v-expansion-panel-header>3. Phone number OTP (one-time-password) </v-expansion-panel-header>
                                 <v-expansion-panel-content>
-                                    Chocolate bar sweet roll chocolate cake pastry I love gummi bears pudding chocolate cake. I love brownie powder apple pie sugar plum I love cake candy canes wafer. Tiramisu I love oat cake oat cake danish icing. Dessert sugar plum sugar plum cookie donut chocolate cake oat cake I love gummi bears.
-                                </v-expansion-panel-content>
-                            </v-expansion-panel>
-                            <v-expansion-panel>
-                                <v-expansion-panel-header>4. Phone number OTP (one-time-password) </v-expansion-panel-header>
-                                <v-expansion-panel-content>
-                                    Chocolate bar sweet roll chocolate cake pastry I love gummi bears pudding chocolate cake. I love brownie powder apple pie sugar plum I love cake candy canes wafer. Tiramisu I love oat cake oat cake danish icing. Dessert sugar plum sugar plum cookie donut chocolate cake oat cake I love gummi bears.
+                                    Cupcake ipsum dolor sit amet. Candy canes cheesecake chocolate bar I love I love jujubes gummi bears ice cream.
+                                    Cheesecake tiramisu toffee cheesecake sugar plum candy canes bonbon candy.
                                 </v-expansion-panel-content>
                             </v-expansion-panel>
                         </v-expansion-panels>
                     </v-col>
-                    <v-col cols="12" sm="4" md="6" class="d-none d-sm-flex justify-center position-relative">
-                        <v-img contain max-width="175" src="@/assets/images/3d-characters/pose-m-1.png" class="security-character"></v-img>
+
+                    <v-col cols="12" sm="4" md="6" class="d-none d-sm-flex justify-center position-relative md-8">
+                        <v-img contain max-width="175" max-height="300" src="@/assets/images/3d-characters/pose-m-1.png" class="security-character "></v-img>
                     </v-col>
                 </v-row>
             </v-card-text>
         </div>
-
-        <!-- divider -->
-        <v-divider></v-divider>
-
+    </v-form>
+     <v-divider></v-divider>
         <div class="pa-3">
             <v-card-title class="flex-nowrap">
                 <v-icon class="text--primary me-3">
                     {{ icons.mdiKeyOutline }}
                 </v-icon>
-                <span class="text-break">Account Verification KYC</span>
+                <span class="text-break">Two-factor authentication</span>
             </v-card-title>
 
             <v-card-text class="two-factor-auth text-center mx-auto">
@@ -58,24 +66,16 @@
                     </v-icon>
                 </v-avatar>
                 <p class="text-base text--primary font-weight-semibold">
-                    KYC (Know Your Custome)
+                    Two factor authentication is not enabled yet.
                 </p>
                 <p class="text-sm text--primary">
-                    check is the mandatory process of identifying and  verifying the client's identity when opening an account
+                    Two-factor authentication adds an additional layer of
+                    security to your account by requiring more than just a
+                    password to log in. Learn more.
                 </p>
             </v-card-text>
-
             <!-- action buttons -->
-            <v-card-text>
-                <v-btn color="primary" class="me-3 mt-4">
-                    Save changes
-                </v-btn>
-                <v-btn color="secondary" outlined class="mt-4">
-                    Cancel
-                </v-btn>
-            </v-card-text>
         </div>
-    </v-form>
 </v-card>
 </template>
 
@@ -85,8 +85,7 @@ import {
     mdiKeyOutline,
     mdiLockOpenOutline,
     mdiEyeOffOutline,
-    mdiEyeOutline,
-    mdiNumeric1CircleOutline,
+    mdiEyeOutline
 } from '@mdi/js'
 import {
     ref
@@ -113,7 +112,6 @@ export default {
                 mdiLockOpenOutline,
                 mdiEyeOffOutline,
                 mdiEyeOutline,
-                mdiNumeric1CircleOutline,
             },
         }
     },
