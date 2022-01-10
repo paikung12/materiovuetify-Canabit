@@ -46,7 +46,7 @@ const routes = [
   {
     path: '/transaction',
     name: 'transaction',
-    component: () => import('@/views/Transaction.vue'),
+    component: () => import('@/views/transactions/Transaction.vue'),
   },
   {
     path: '/partner',
@@ -70,6 +70,14 @@ const routes = [
     },
   },
   {
+    path: '/Connection',
+    name: 'Connection',
+    component: () => import('@/views/Connection'),
+    meta: {
+      layout: 'blank',
+    },
+  },
+  {
     path: '/error-404',
     name: 'error-404',
     component: () => import('@/views/Error.vue'),
@@ -81,6 +89,7 @@ const routes = [
     path: '*',
     redirect: 'error-404',
   },
+
 ]
 
 const router = new VueRouter({
