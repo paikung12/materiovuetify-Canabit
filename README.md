@@ -8,7 +8,7 @@
 
 <h1 align="center">
    <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template" target="_blank" align="center">
-      Materio - Vuetify VueJS Free Admin Template
+      Materio - Vuetify VueJS 
    </a>
 </h1>
 
