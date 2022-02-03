@@ -48,105 +48,37 @@
         :icon="icons.mdiBankTransfer"
       ></nav-menu-link>
       <nav-menu-link
-        title="Partner"
+        title="E-commerce"
         :to="{ name: 'partner'}"
         :icon="icons.mdiHandshakeOutline"
       ></nav-menu-link>
-      <!-- <nav-menu-group
-        title="Partner"
-        :icon="icons.mdiHandshakeOutline"
-      >
-        <nav-menu-link
-          title="Electronics"
-          :to="{ name: 'pages-login' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Beauty"
-          :to="{ name: 'pages-register' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Travel"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Fashion"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Delivery"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Foods"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Sport"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link> -->
-        <!-- <nav-menu-link
-          title="Login"
-          :to="{ name: 'pages-login' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Register"
-          :to="{ name: 'pages-register' }"
-          target="_blank"
-        ></nav-menu-link>
-        <nav-menu-link
-          title="Error"
-          :to="{ name: 'error-404' }"
-          target="_blank"
-        ></nav-menu-link> -->
-      <!-- </nav-menu-group> -->
+     
       <nav-menu-link
         title="Account Settings"
         :to="{ name: 'pages-account-settings'}"
         :icon="icons.mdiAccountCogOutline"
       ></nav-menu-link>
-      <nav-menu-section-title title="USER SUPPORT"></nav-menu-section-title>
+      <nav-menu-section-title title="FOREX BORCKER"></nav-menu-section-title>
       <nav-menu-link
-        title="Get startweb"
-        :to="{ name: 'typography' }"
-        :icon="icons.mdiAlphaTBoxOutline"
+        title="Forex"
+        :to="{ name: 'forex' }"
+        :icon="icons.mdiFinance"
       ></nav-menu-link>
       <nav-menu-link
-        title="Contact Support"
-        :to="{ name: 'icons' }"
-        :icon="icons.mdiEyeOutline"
-      ></nav-menu-link>
+        title="History Account"
+        :to="{ name: 'historyaccount'}"
+        :icon="icons.mdiBankTransfer"
+      ></nav-menu-link> 
       <nav-menu-link
-        title="Cards"
-        :to="{ name: 'cards' }"
-        :icon="icons.mdiCreditCardOutline"
+        title="Semi Auto"
+        :to="{ name: 'semiauto'}"
+        :icon="icons.mdiAnimation"
       ></nav-menu-link>
+     
       <nav-menu-link
-        title="Tables"
-        :to="{ name: 'simple-table' }"
-        :icon="icons.mdiTable"
-      ></nav-menu-link>
-      <nav-menu-link
-        title="Form Layouts"
-        :to="{ name: 'form-layouts' }"
-        :icon="icons.mdiFormSelect"
-      ></nav-menu-link>
-      <nav-menu-link
-        title="pages login"
-        :to="{ name: 'pages-login' }"
-        :icon="icons.mdiFormSelect"
-      ></nav-menu-link>
-      <nav-menu-link
-        title="pages-register"
-        :to="{ name: 'pages-register' }"
-        :icon="icons.mdiFormSelect"
+        title="Signals"
+        :to="{ name: 'signals'}"
+        :icon="icons.mdiBroadcast"
       ></nav-menu-link>
     </v-list>
     <a
@@ -178,6 +110,9 @@ import {
   mdiAccountCogOutline,
   mdiBankTransfer,
   mdiHandshakeOutline,
+  mdiFinance,
+  mdiAnimation,
+  mdiBroadcast,
 } from '@mdi/js'
 import NavMenuSectionTitle from './components/NavMenuSectionTitle.vue'
 import NavMenuGroup from './components/NavMenuGroup.vue'
@@ -207,7 +142,10 @@ export default {
         mdiFormSelect,
         mdiAccountCogOutline,
         mdiBankTransfer,
-        mdiHandshakeOutline
+        mdiHandshakeOutline,
+        mdiFinance,
+        mdiAnimation,
+        mdiBroadcast,
       },
     }
   },

@@ -6,7 +6,7 @@
                 <span class="me-3">Loyalty Canabit Point</span>
                 <v-spacer></v-spacer>
             </v-card-title>
-            <div class="space-y-16 mt-1">
+            <div class="space-y-16 mt-2">
                 <div class="md:max-w-xl w-96 h-56 m-auto bg-red-100 rounded-xl relative text-white shadow-lg transition-transform transform hover:scale-110 ">
                     <img class="relative object-cover w-full h-full rounded-xl" src="https://i.imgur.com/kGkSg1v.png">
                     <div class="w-full px-8 absolute top-8">
@@ -19,6 +19,7 @@
                                     Karthik P
                                 </p>
                             </div>
+
                         </div>
                         <div class="pt-1 flex justify-between">
 
@@ -69,41 +70,46 @@
             </div>
         </div>
         <v-divider class="my-sm-5 mx-5" :vertical="$vuetify.breakpoint.smAndUp"></v-divider>
-        <div class="flex-grow-1">
-            <v-card-title>
-                <span class="me-3">History Transection</span>
-                <v-spacer></v-spacer>
-            </v-card-title>
 
-            <v-card-text>
-                <v-list>
-                    <v-list-item v-for="(data,index) in History" :key="data.img" :class="`d-flex px-0 ${index > 0 ? 'mt-4':''}`">
-                        <v-img max-height="30" max-width="30" :src="data.img" class="me-3"></v-img>
+        <div class="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
+        
+            <h1 class="text-xl font-semibold mb-8">Hello there 👋, <span class="font-normal">please fill in your information to continue</span></h1>
+            <v-form>
+                <v-row>
+                    <v-col cols="12" md="3">
+                        <label for="firstname">Name</label>
+                    </v-col>
 
-                        <div class="d-flex align-center flex-grow-1 flex-wrap">
-                            <div class="me-auto pe-2">
-                                <h4 class="font-weight-semibold">
-                                    {{ data.title }}
-                                </h4>
-                                <span class="text-xs">{{ data.subtitle }}</span>
-                            </div>
+                    <v-col cols="12" md="9">
+                        <v-text-field id="firstname" outlined dense placeholder="First Name" hide-details></v-text-field>
+                    </v-col>
 
-                            <span class="font-weight-semibold success--text">{{ data.amount }} Point</span>
-                        </div>
-                    </v-list-item>
-                </v-list>
-            </v-card-text>
+                    <v-col cols="12" md="3">
+                        <label for="email">Bank number</label>
+                    </v-col>
+
+                    <v-col cols="12" md="9">
+                        <v-text-field id="email" outlined dense placeholder="*******" hide-details></v-text-field>
+                    </v-col>
+                    <v-col cols="12" md="3">
+                        <label for="password">Bank name</label>
+                    </v-col>
+
+                    <v-col cols="12" md="9">
+                        <v-text-field id="password" type="name" outlined dense placeholder="enter bank name" hide-details></v-text-field>
+                    </v-col>
+                    <v-btn color="info" class="w-full py-3 mt-6 font-medium">
+                        Cashout
+                    </v-btn>
+                </v-row>
+            </v-form>
         </div>
     </div>
-
 </v-card>
 </template>
 
 <script>
 export default {
-    components: {
-
-    },
     setup() {
         const History = [{
                 img: require('@/assets/images/logos/google.png'),

@@ -56,7 +56,7 @@
                 <v-icon class="text--primary me-3">
                     {{ icons.mdiKeyOutline }}
                 </v-icon>
-                <span class="text-break">Two-factor authentication</span>
+                <span class="text-break">KYC</span>
             </v-card-title>
 
             <v-card-text class="two-factor-auth text-center mx-auto">
@@ -66,12 +66,10 @@
                     </v-icon>
                 </v-avatar>
                 <p class="text-base text--primary font-weight-semibold">
-                    Two factor authentication is not enabled yet.
+                    Know Your Custome
                 </p>
                 <p class="text-sm text--primary">
-                    Two-factor authentication adds an additional layer of
-                    security to your account by requiring more than just a
-                    password to log in. Learn more.
+                    check is the mandatory process of identifying and  verifying the client's identity when opening an account
                 </p>
             </v-card-text>
             <!-- action buttons -->

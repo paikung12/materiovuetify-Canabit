@@ -4,10 +4,6 @@
       <v-card class="auth-card">
         <!-- logo -->
         <v-card-title class="d-flex align-center justify-center py-7">
-          <router-link
-            to="/"
-            class="d-flex align-center"
-          >
             <v-img
               :src="require('@/assets/images/logos/logo.svg')"
               max-height="30px"

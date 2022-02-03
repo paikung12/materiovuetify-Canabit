@@ -11,6 +11,7 @@ const data = [
     age: '27',
     experience: '2 Years',
     status: 1,
+    transactionnumber:'211101CP50NNH',
   },
   {
     responsive_id: '',
@@ -24,6 +25,7 @@ const data = [
     age: '61',
     experience: '1 Year',
     status: 2,
+    transactionnumber:'211101CP50NNH',
   },
   {
     responsive_id: '',

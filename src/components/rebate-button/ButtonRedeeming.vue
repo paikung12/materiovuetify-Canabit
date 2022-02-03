@@ -17,6 +17,7 @@
             <v-btn
               small
               color="primary"
+               @click="$router.push('redeem')"
             >
               View Sales
             </v-btn>

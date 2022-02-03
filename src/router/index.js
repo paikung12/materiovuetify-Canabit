@@ -54,6 +54,11 @@ const routes = [
     component: () => import('@/views/partner/Partner.vue'),
   },
   {
+    path: '/profilebrand',
+    name: 'profilebrand',
+    component: () => import('@/views/profilebrand/profilebrand.vue')
+  },
+  {
     path: '/pages/login',
     name: 'pages-login',
     component: () => import('@/views/pages/Login.vue'),
@@ -70,12 +75,56 @@ const routes = [
     },
   },
   {
-    path: '/Connection',
+    path: '/connection',
     name: 'Connection',
     component: () => import('@/views/Connection'),
     meta: {
       layout: 'blank',
     },
+  },
+  {
+    path: '/cashout',
+    name: 'cashout',
+    component: () => import('@/views/cashout/Cashout.vue'),
+  },
+  {
+    path: '/redeem',
+    name: 'redeem',
+    component: () => import('@/views/redeem/Redeem.vue'),
+    meta: {
+      layout: 'blank',
+    },
+  },
+  {
+    path: '/redeemspecial',
+    name: 'redeemspecial',
+    component: () => import('@/views/redeem/RedeemSpecial.vue')
+  },
+  {
+    path: '/reward',
+    name: 'reward',
+    component: () => import('@/views/reward/Reward.vue'),
+    
+  },
+  {
+    path: '/forex',
+    name: 'forex',
+    component: () => import('@/views/forex/Forex.vue'),
+  },
+  {
+    path: '/historyaccount',
+    name: 'historyaccount',
+    component: () => import('@/views/historyaccount/HistoryAccount.vue'),
+  },
+  {
+    path: '/semiauto',
+    name: 'semiauto',
+    component: () => import('@/views/semiauto/Semiauto.vue'),
+  },
+  {
+    path: '/signals',
+    name: 'signals',
+    component: () => import('@/views/signals/Signals.vue'),
   },
   {
     path: '/error-404',

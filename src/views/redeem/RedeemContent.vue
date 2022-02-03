@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <vertical-nav-menu :is-drawer-open.sync="isDrawerOpen"></vertical-nav-menu>
-
+    <VerticalNavMenuRedeem :is-drawer-open.sync="isDrawerOpen"></VerticalNavMenuRedeem>
     <v-app-bar
       app
       flat
@@ -16,30 +15,10 @@
             @click="isDrawerOpen = !isDrawerOpen"
           ></v-app-bar-nav-icon>
 
-
           <v-spacer></v-spacer>
 
           <!-- Right Content -->
-          <a
-            href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free"
-            target="_blank"
-            rel="nofollow"
-          >
-            <v-icon class="ms-6 me-4">
-              {{ icons.mdiGithub }}
-            </v-icon>
-          </a>
-          <theme-switcher></theme-switcher>
-          <v-btn
-            icon
-            small
-            class="ms-3"
-          >
-            <v-icon>
-              {{ icons.mdiBellOutline }}
-            </v-icon>
-          </v-btn>
-          <app-bar-user-menu></app-bar-user-menu>
+      
         </div>
       </div>
     </v-app-bar>
@@ -49,7 +28,6 @@
         <slot></slot>
       </div>
     </v-main>
-
     <v-footer
       app
       inset
@@ -75,15 +53,15 @@
 <script>
 import { ref } from '@vue/composition-api'
 import { mdiMagnify, mdiBellOutline, mdiGithub } from '@mdi/js'
-import VerticalNavMenu from './components/vertical-nav-menu/VerticalNavMenu.vue'
-import ThemeSwitcher from './components/ThemeSwitcher.vue'
-import AppBarUserMenu from './components/AppBarUserMenu.vue'
+import VerticalNavMenuRedeem from '@/layouts/components/vertical-nav-menu-redeem/VerticalNavMenuRedeem'
+
+
+
 
 export default {
   components: {
-    VerticalNavMenu,
-    ThemeSwitcher,
-    AppBarUserMenu,
+    VerticalNavMenuRedeem,
+   
   },
   setup() {
     const isDrawerOpen = ref(null)

@@ -43,18 +43,18 @@ import StatisticsCardVertical from '@/components/statistics-card/StatisticsCardV
 import FavoriteCard from '@/components/statistics-card/FavoriteCard'
 
 // demos
-import DashboardCongratulationJohn from './DashboardCashout.vue'
+import DashboardCongratulationJohn from '../../components/rebate-button/ButtonCashout.vue'
 import DashboardStatisticsCard from './DashboardStatisticsCard.vue'
 import DashboardCardTotalEarning from './DashboardCardTotalEarning.vue'
 import DashboardCardDepositAndWithdraw from './DashboardCardDepositAndWithdraw.vue'
 import DashboardCardSalesByCountries from './DashboardCardSalesByCountries.vue'
-import DashboardWeeklyOverview from './DashboardWeeklyOverview.vue'
 import DashboardDatatable from './DashboardDatatable.vue'
 import DashboardSlide from '@/views/dashboard/DashboardSlide'
-import DashboardRedeeming from '@/views/dashboard/DashboardRedeeming'
-import DashboardWinprize from '@/views/dashboard/DashboardWinprize'
+import DashboardRedeeming from '@/components/rebate-button/ButtonRedeeming.vue'
+import DashboardWinprize from '@/components/rebate-button/ButtonWinprize.vue'
 import DashboardParthner from '@/views/dashboard/DashboardParthner'
 import SpecialCard from '@/components/statistics-card/SpecialCard.vue'
+
 
 export default {
     components: {
@@ -64,7 +64,6 @@ export default {
         DashboardCardTotalEarning,
         DashboardCardDepositAndWithdraw,
         DashboardCardSalesByCountries,
-        DashboardWeeklyOverview,
         DashboardDatatable,
         DashboardSlide,
         DashboardRedeeming,
@@ -73,6 +72,7 @@ export default {
         FavoriteCard,
         SpecialCard,
         SpecialCard,
+        
     },
     setup() {
         const totalProfit = {

@@ -1,16 +1,16 @@
 <template>
 <div>
-    <h2 class="text-center">E-commerce Partner </h2>
+    <h2 class="text-center">Forex Borcker</h2>
     <v-item-group>
         <v-container>
             <v-row>
-                <v-col v-for="n in 40" :key="n" sm="2">
+                <v-col v-for="n in 8" :key="n" cols="12" sm="2">
                     <v-item v-slot="{ }">
                         <v-hover v-slot="{ hover }">
                             <v-card class="mx-auto mt-10" max-width="400" max-height="400">
                                 <v-img :aspect-ratio="18/9" src="https://cdn.vuetifyjs.com/images/cards/kitchen.png">
                                     <v-expand-transition>
-                                        <div v-if="hover" class="d-flex   primary  text-h6   v-card--reveal text-center white--text" style="height:100%;">
+                                        <div v-if="hover" class="d-flex   primary v-card--reveal  text-h6  text-center white--text" style="height:100%;">
                                             <v-card-text class="my-4 text-center text-h6">
                                                 Hover over me!
                                             </v-card-text>
@@ -18,13 +18,13 @@
                                     </v-expand-transition>
                                 </v-img>
                                 <v-card-text class="pt-6" style="position: relative;">
-                                    <v-btn absolute color="primary" class="white--text" fab small right top @click="$router.push('profilebrand')">
+                                    <v-btn absolute color="primary" class="white--text" fab small right top>
                                         <v-icon dark>
                                             {{ icons.mdiArrowRight }}
                                         </v-icon>
                                     </v-btn>
                                     <div class="font-weight-light grey--text text-h6 mb-2 text-center">
-                                        E-commerce
+                                        Forex
                                     </div>
                                 </v-card-text>
                             </v-card>

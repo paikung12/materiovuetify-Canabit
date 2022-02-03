@@ -1,6 +1,6 @@
 <template>
 <div>
-    <Partnerforex></Partnerforex>
+    <!-- <Partnerforex></Partnerforex> -->
     <Partnerecome></Partnerecome>
 </div>
 </template>

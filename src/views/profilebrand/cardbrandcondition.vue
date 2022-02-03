@@ -17,8 +17,9 @@
             <v-btn
               small
               color="primary"
+              @click="$router.push('cashout')"
             >
-              View Cash out
+              View Web Brand
             </v-btn>
           </div>
         </v-card-text>

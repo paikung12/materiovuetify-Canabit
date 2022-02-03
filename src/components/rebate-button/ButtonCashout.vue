@@ -17,6 +17,7 @@
             <v-btn
               small
               color="primary"
+              @click="$router.push('cashout')"
             >
               View Cash out
             </v-btn>
